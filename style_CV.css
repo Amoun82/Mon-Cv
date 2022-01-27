@@ -1,0 +1,193 @@
+/* initialiser les marges de la page web a zero*/
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* utiliser pour mettre les lettrines sur les titres h1 et h2*/
+h1::first-letter,h2::first-letter
+{
+    margin: 2px;
+    color: red;
+    text-transform: uppercase;
+    font-size:30px;
+}
+
+/* utliser pour centre les titres h1 et h2 */
+h1,h2
+{
+    text-align: center;
+    border: 1px gold solid; 
+}
+
+/* utiliser pour mettre les premieres lettre de la class text en lettrine */
+.text::first-letter
+{
+    margin: 2px;
+    color: red;
+    text-transform: uppercase;
+    font-size:20px;
+}
+
+/* utiliser pour centrer et mettre en forme le body */
+body
+{
+    background-image: url("https://s2.qwant.com/thumbr/0x0/f/8/89554280f8c9524b841b7b0f31ef45d087bd0e5b140b84c3bf54c0aadbb73f/tumblr_nekjes8VHD1tbupgho1_500.gif?u=http%3A%2F%2F31.media.tumblr.com%2Fafebf65318f246037aa27a47de50b6d9%2Ftumblr_nekjes8VHD1tbupgho1_500.gif&q=0&b=1&p=0&a=1");
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+/* utiliser pour centrer une image */
+#image
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin:auto;
+    border: 2px dashed purple;
+    display: flex;
+    align-items: center;
+}
+
+/* utiliser pour aligner les textes au milieu */
+aside
+{
+    align-items: center;
+    font-family: Apple Chancery, cursive;
+    background-color:darkgrey;
+    border: 10px solid red;
+    border-style: dashed double groove;
+    margin: 0px 10px;
+    max-width: 400px;
+}
+
+/* utiliser pour aligner la photo et le texte */
+main
+{
+    background-image: url("https://s2.qwant.com/thumbr/0x380/6/c/e7aba07caf129fea618b561a9d8939961b7b8666b940d2d58bf0ed358da370/Lulu.jpg?u=http%3A%2F%2Foyster.ignimgs.com%2Fmediawiki%2Fapis.ign.com%2Ffinal-fantasy-x%2F2%2F25%2FLulu.jpg&q=0&b=1&p=0&a=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    border: 10px solid red;
+    border-style: dashed double ridge;
+    text-align: left;
+    font-family: Courier, monospace;
+    color:rgb(0, 255, 0);
+    font-size:20px;
+    padding: 200px 0px ;
+    align-items: center;
+    
+}
+
+/* mettre une bordure au titre h2 */
+main h2
+{
+    border: 1px dashed gold;  
+}
+
+/*metre une marge a chaque paragraphe de la balise main et aside */
+main > div > p, aside > div > p, aside > div > ul
+{
+    margin-left: 50px;
+}
+
+/* utliser pour les écrans de petites tailles */
+@media screen and (max-width: 780px)
+{
+    /* initialiser les marges de la page web a zero*/
+    html, body
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside
+    {
+        margin:auto;
+        justify-items: center;
+        flex-flow: column wrap;
+    }
+    main
+    {
+        margin-top: 10px;
+        justify-items: center;
+    }
+}
+
+/* utiliser les écrans de petites tailles */
+@media screen and (max-width: 850px)
+{
+    /* initialiser les marges de la page web a zero*/
+    html, body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    
+    aside
+    {
+        margin:auto;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    main
+    {
+        margin-top:10px;
+        align-items: center;
+
+    }
+}
+
+
+/* utiliser les écrans de petites tailles */
+@media screen and (max-width: 1024px)
+{
+    /* initialiser les marges de la page web a zero*/
+    html, body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    
+    aside
+    {
+        margin:auto;
+        justify-items: center;
+        flex-flow: column wrap;
+    }
+
+    main
+    {
+        margin-top:10px;
+        justify-items: center;
+    }
+}
+
+/* utiliser les écrans de petites tailles */
+@media screen and (max-width: 1366px)
+{
+    /* initialiser les marges de la page web a zero*/
+    html, body
+    {
+        margin: 0;
+        padding: 0;
+    }
+    
+    aside
+    {
+        margin:auto;
+        justify-items: center;
+        flex-flow: column wrap;
+    }
+
+    main
+    {
+        margin:auto;
+        margin-top:10px;
+        justify-items: center;
+    }
+}
